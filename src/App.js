@@ -189,7 +189,8 @@ function App() {
                     className="stars"
                   />
                   <br />
-                  Thanks for reaching out to us! We'll get back to you soon.
+                  Thanks for reaching out to us!<br></br> We'll get back to you
+                  soon.
                 </p>
               </div>
             ) : (
