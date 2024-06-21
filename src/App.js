@@ -1,13 +1,29 @@
 import { useState } from "react";
+import { enforceCriteria } from './pages.js';
 import "./App.css";
+import axios from 'axios';
 
 function App() {
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
 
-  const handleSubmit = (e) => {
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+  const elder = enforceCriteria();
+
+  try {
+    // Make a POST request to the API
+    const response = await axios.post(`https://email.dl-unvexed.workers.dev/send?email=${email}&first_name=${firstName}&last_name=${lastName}&phone=${mobile}&token=${elder}`);
+    console.log(response.status)
     setFormSubmitted(true);
-  };
+  } catch (error) {
+    console.error("Error:", error);
+  }
+};
   return (
     <html lang="en">
       <head>
@@ -17,7 +33,7 @@ function App() {
       </head>
       <body>
         <header>
-          <div class="container">
+          <div className="container">
             <h1>UNVEX</h1>
             <nav>
               <ul>
@@ -35,67 +51,67 @@ function App() {
                 </li>
               </ul>
             </nav>
-            <a href="#form" class="contact-btn">
+            <a href="#form" className="contact-btn">
               Contact Us
             </a>
           </div>
         </header>
 
-        <section id="home" class="hero">
+        <section id="home" className="hero">
           <div>
             <h2>Grow Your Business with Our Digital Marketing Solutions</h2>
             <p>
               Unlock the power of digital marketing to reach your target
               audience and boost your sales.
             </p>
-            <a href="#form" class="btn-primary">
+            <a href="#form" className="btn-primary">
               Get Started
             </a>
           </div>
         </section>
 
-        <section id="services" class="services">
-          <div class="con">
-            <div class="service-item">
+        <section id="services" className="services">
+          <div className="con">
+            <div className="service-item">
               <h3>SEO</h3>
               <p>Search Engine Optimization</p>
             </div>
-            <div class="service-item">
+            <div className="service-item">
               <h3>PPC</h3>
               <p>Pay Per Click</p>
             </div>
-            <div class="service-item">
+            <div className="service-item">
               <h3>SMM</h3>
               <p>Social Media Marketing</p>
             </div>
-            <div class="service-item">
+            <div className="service-item">
               <h3>PM</h3>
               <p>Performance Marketing</p>
             </div>
           </div>
         </section>
 
-        <section class="about">
+        <section className="about">
           <div>
             <h3>About Us</h3>
             <p>
               Crafted from a fusion of expertise and passion, we will
               revolutionize your digital presence.
             </p>
-            <div class="stats">
-              <div class="stat">
+            <div className="stats">
+              <div className="stat">
                 <h4>4</h4>
                 <p>Years Experience</p>
               </div>
-              <div class="stat">
+              <div className="stat">
                 <h4>59</h4>
                 <p>Team Members</p>
               </div>
-              <div class="stat">
+              <div className="stat">
                 <h4>2,382</h4>
                 <p>Projects Completed</p>
               </div>
-              <div class="stat">
+              <div className="stat">
                 <h4>829</h4>
                 <p>Clients Served</p>
               </div>
@@ -103,8 +119,8 @@ function App() {
           </div>
         </section>
 
-        <section class="process">
-          <div class="container">
+        <section className="process">
+          <div className="container">
             <h3>How We Work to Grow Your Business</h3>
             <ol>
               <li>Understanding Your Needs</li>
@@ -113,14 +129,14 @@ function App() {
               <li>Continuous Optimization</li>
             </ol>
 
-            <a href="#form" class="btn-primary">
+            <a href="#form" className="btn-primary">
               Start Your Project
             </a>
           </div>
         </section>
 
-        <section id="testimonials" class="testimonials">
-          <div class="container">
+        <section id="testimonials" className="testimonials">
+          <div className="container">
             <h3>Testimonials</h3>
             <blockquote>
               <p>
@@ -149,17 +165,17 @@ function App() {
           </div>
         </section>
 
-        <section id="faq" class="faq">
-          <div class="container">
+        <section id="faq" className="faq">
+          <div className="container">
             <h3>Frequently Asked Questions</h3>
-            <div class="faq-item">
+            <div className="faq-item">
               <h4>What services does Genius Digital Marketing Agency offer?</h4>
               <p>
                 We offer a wide range of digital marketing services including
                 SEO, PPC, SMM, and Email Marketing.
               </p>
             </div>
-            <div class="faq-item">
+            <div className="faq-item">
               <h4>
                 What makes Genius different from other digital marketing
                 agencies?
@@ -169,7 +185,7 @@ function App() {
                 us apart.
               </p>
             </div>
-            <div class="faq-item">
+            <div className="faq-item">
               <h4>Can you manage my entire digital marketing campaign?</h4>
               <p>
                 Yes, we provide comprehensive management for all aspects of your
@@ -196,18 +212,22 @@ function App() {
               <form onSubmit={handleSubmit}>
                 <h3>Contact Us</h3>
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" required />
+                <input type="text" id="firstName" name="firstName" value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)} required />
 
                 <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" required />
+                <input type="text" id="lastName" name="lastName" value={lastName}
+                  onChange={(e) => setLastName(e.target.value)} required />
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" value={email}
+                  onChange={(e) => setEmail(e.target.value)} required />
 
                 <label for="mobile">Mobile Number</label>
-                <input type="tel" id="mobile" name="mobile" required />
+                <input type="tel" id="mobile" name="mobile" value={mobile}
+                  onChange={(e) => setMobile(e.target.value)} required />
 
-                <button type="submit" class="btn-primary">
+                <button type="submit" className="btn-primary">
                   Submit
                 </button>
               </form>
@@ -216,8 +236,8 @@ function App() {
         </section>
 
         <footer>
-          <div class="container">
-            <div class="footer-nav">
+          <div className="container">
+            <div className="footer-nav">
               <a href="#home">Home</a>
               <a href="#services">Services</a>
               <a href="#testimonials">Testimonials</a>
