@@ -281,7 +281,6 @@ footer .footer-nav a {
 }
 
 .testimonial-style {
-  width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -295,7 +294,7 @@ footer .footer-nav a {
 
 #thankYouMessage {
   font-weight: 700;
-  max-width: 400px;
+
   height: 401px;
   margin: 0;
   font-size: 1.2em;
