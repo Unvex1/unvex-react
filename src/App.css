@@ -1,38 +1,408 @@
-.App {
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+*::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex; /* Add flex display */
+  justify-content: space-between; /* Ensure space between header items */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 1em 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  position: fixed; /* Make the header sticky */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-btn {
+  background: #007bff;
+  color: #fff;
+  width: 85px;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero {
+  background: #000;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  padding: 4em 0;
+  padding-top: 6em;
+}
+
+.hero h2 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.hero p {
+  margin: 0.5em 0 1.5em;
+  font-size: 1.2em;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.services {
+  background: #fff;
+  padding: 4em 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.services .con {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.services .service-item {
+  background: #f9f9f9;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(25% - 1em);
+  margin: 0.5em;
+  box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.about {
+  background: #f0f0f0;
+  padding: 4em 0;
+  text-align: center;
+}
+
+.about .stats {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: center;
+  margin-top: 2em;
+}
+
+.about .stat {
+  background: #fff;
+  padding: 1em;
+  min-width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  flex: 1 1 150px; /* Adjust the width for smaller screens */
+}
+
+.process {
+  color: #fff;
+  background: #000;
+  padding: 4em 4em;
+  text-align: center;
+}
+
+.process ol {
+  list-style: none;
+  padding: 25px;
+
+  margin: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.process .container .testimonials {
+  background: #f0f0f0;
+  padding: 4em 0;
+  text-align: center;
+}
+.process .container {
+  display: flex;
+
+  flex-direction: column;
+}
+
+.testimonials blockquote {
+  background: #fff;
+  max-width: 250px;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.testimonials .container {
+  display: flex;
+  flex-direction: row;
+}
+.testimonials .container h3 {
+  width: 100%;
+  text-align: center;
+}
+.faq {
+  background: #fff;
+  padding: 4em 0;
+
+  text-align: center;
+}
+.faq .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.faq h3 {
+  width: 100%;
+}
+
+.faq .faq-item {
+  background: #f9f9f9;
+  max-width: 500px;
+  padding: 1em;
+  margin: 1em 0;
+
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+footer .footer-nav {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1em;
 }
 
-.App-link {
-  color: #61dafb;
+footer .footer-nav a {
+  color: #fff;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Add the following styles to your existing CSS file */
+
+.contact-form {
+  background: #f0f0f0;
+  padding: 4em 0;
+  text-align: center;
+}
+.contact-form .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  font-size: 1em;
+  text-align: left;
+}
+
+.contact-form input {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background: #007bff;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #0056b3;
+}
+
+.testimonial-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin-top: 2em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#thankYouMessage {
+  height: 401px;
+  margin: 0;
+  font-size: 1.2em;
+  text-align: center;
+  color: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    /* padding:; */
   }
-  to {
-    transform: rotate(360deg);
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-btn {
+    margin-right: 20px;
+    width: 85px;
+    text-align: center;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .hero h2 {
+    font-size: 2em;
+  }
+
+  .services .con {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services .service-item {
+    flex: 1 1 100%;
+    min-width: 250px;
+    max-width: 400px;
+  }
+  .process .container {
+    flex-direction: column;
+  }
+
+  .about .stats {
+    flex-direction: column;
+  }
+
+  .about .stat {
+    flex: 1 1 100%;
+    max-width: 400px;
+  }
+
+  footer .footer-nav {
+    display: flex;
+    margin-left: 27%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+  }
+  footer p {
+    margin-left: 30%;
+  }
+
+  .process ol {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials blockquote {
+    margin-left: 25%;
+  }
+  .faq .faq-item {
+    margin: 1em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 1.5em;
+  }
+  nav ul {
+    display: none;
+  }
+
+  .hero p {
+    margin: 5px;
+    padding: 25px;
+    font-size: 1em;
+  }
+
+  .contact-btn {
+    margin-right: 20px;
+    width: 85px;
+    text-align: center;
+  }
+  .testimonials blockquote {
+    margin-left: 13%;
+  }
+  footer .footer-nav {
+    display: flex;
+    margin-left: 15%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1em;
+  }
+  footer p {
+    margin-left: 17%;
   }
 }
