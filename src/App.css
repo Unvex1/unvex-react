@@ -61,7 +61,7 @@ nav a {
 }
 
 .contact-btn {
-  background: #007bff;
+  background: #0051a8;
   color: #fff;
   width: 95px;
   padding: 0.5em 1em;
@@ -81,10 +81,10 @@ nav a {
   padding-top: 6em;
 }
 
-.hero h2 {
+/* .hero h2 {
   margin: 0;
   font-size: 2.5em;
-}
+} */
 
 .hero p {
   margin: 0.5em 0 1.5em;
@@ -92,7 +92,7 @@ nav a {
 }
 
 .btn-primary {
-  background: #007bff;
+  background: #0051a8;
   color: #fff;
   padding: 0.75em 1.5em;
   border-radius: 5px;
@@ -268,7 +268,7 @@ footer .footer-nav a {
 }
 
 .contact-form button {
-  background: #007bff;
+  background: #0051a8;
   color: #fff;
   padding: 0.75em 1.5em;
   border: none;
