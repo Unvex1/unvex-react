@@ -63,7 +63,7 @@ nav a {
 .contact-btn {
   background: #007bff;
   color: #fff;
-  width: 85px;
+  width: 95px;
   padding: 0.5em 1em;
   border-radius: 5px;
   text-decoration: none;
@@ -315,7 +315,7 @@ footer .footer-nav a {
   }
   .contact-btn {
     margin-right: 20px;
-    width: 85px;
+    width: 90px;
     text-align: center;
   }
   nav ul {
@@ -390,7 +390,7 @@ footer .footer-nav a {
 
   .contact-btn {
     margin-right: 20px;
-    width: 85px;
+    width: 89px;
     text-align: center;
   }
   .testimonials blockquote {
