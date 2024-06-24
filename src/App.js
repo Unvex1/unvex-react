@@ -41,12 +41,12 @@ function App() {
       <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Unvex | Digital Marketing</title>
+        <title>Unvexed | Digital Marketing</title>
       </head>
 
       <header>
         <div className="container">
-          <h1>UNVEX</h1>
+          <h1>UNVEXED</h1>
           <nav>
             <ul>
               <li>
@@ -110,10 +110,15 @@ function App() {
 
       <section id="home" className="hero" ref={homeRef}>
         <div>
-          <h2>Grow Your Business with Our Digital Marketing Solutions</h2>
+          <h2>Why Unvexed?</h2>
           <p>
-            Unlock the power of digital marketing to reach your target audience
-            and boost your sales.
+            Running a small business or startup is tough. We get it. You need
+            effective marketing strategies that deliver real results without
+            breaking the bank. At Unvexed, we specialize in Facebook ads, Google
+            ads, and comprehensive marketing strategies designed to maximize
+            your return on ad spend (ROAS) and minimize your cost per click
+            (CPC). Our proven scaling strategies ensure your campaigns reach new
+            heights.
           </p>
           <a
             href="#form"
@@ -131,47 +136,58 @@ function App() {
       <section id="services" className="services" ref={servicesRef}>
         <div className="con">
           <div className="service-item">
-            <h3>SEO</h3>
-            <p>Search Engine Optimization</p>
+            <h3>Facebook Ads</h3>
+            <p>
+              Drive targeted traffic to your business with tailored Facebook ad
+              campaigns.
+            </p>
           </div>
           <div className="service-item">
-            <h3>PPC</h3>
-            <p>Pay Per Click</p>
+            <h3>Google Ads</h3>
+            <p>
+              Reach customers when they're searching for products or services
+              like yours.
+            </p>
           </div>
           <div className="service-item">
-            <h3>SMM</h3>
-            <p>Social Media Marketing</p>
-          </div>
-          <div className="service-item">
-            <h3>PM</h3>
-            <p>Performance Marketing</p>
+            <h3>Marketing Strategy</h3>
+            <p>
+              Develop a customized marketing plan that aligns with your business
+              goals.
+            </p>
           </div>
         </div>
       </section>
 
       <section className="about">
         <div>
-          <h3>About Us</h3>
+          <h3>Benefits You'll Love</h3>
           <p>
             Crafted from a fusion of expertise and passion, we will
             revolutionize your digital presence.
           </p>
           <div className="stats">
             <div className="stat">
-              <h4>4</h4>
-              <p>Years Experience</p>
+              <h4>High ROAS</h4>
+              <p>We guarantee a high return on your advertising spend.</p>
             </div>
             <div className="stat">
-              <h4>59</h4>
-              <p>Team Members</p>
+              <h4>Low CPC</h4>
+              <p>Get more clicks for less, maximizing your budget.</p>
             </div>
             <div className="stat">
-              <h4>2,382</h4>
-              <p>Projects Completed</p>
+              <h4>Expert Scaling</h4>
+              <p>
+                We use advanced scaling strategies to grow your campaigns
+                effectively.
+              </p>
             </div>
             <div className="stat">
-              <h4>829</h4>
-              <p>Clients Served</p>
+              <h4>Dedicated Support</h4>
+              <p>
+                Our team is here for you, providing insights and optimizations
+                every step of the way.
+              </p>
             </div>
           </div>
         </div>
@@ -179,12 +195,12 @@ function App() {
 
       <section className="process">
         <div className="container">
-          <h3>How We Work to Grow Your Business</h3>
+          <h3>How It Works</h3>
           <ol>
-            <li>Understanding Your Needs</li>
-            <li>Creating a Custom Strategy</li>
-            <li>Data-Driven Execution</li>
-            <li>Continuous Optimization</li>
+            <li>Free Consultation</li>
+            <li>Customized Plan</li>
+            <li>Launch Campaigns</li>
+            <li>Scale & Grow</li>
           </ol>
 
           <a
@@ -202,58 +218,68 @@ function App() {
 
       <section id="testimonials" className="testimonials" ref={testimonialsRef}>
         <div className="container">
-          <h3>Testimonials</h3>
+          <h3>Success Stories</h3>
           <blockquote>
             <p>
-              "Genius transformed our business with innovative digital
-              marketing. Their expertise boosted our online presence and sales.
-              We're thrilled with the results!"
+              “Unvexed transformed our marketing efforts. Their strategies
+              brought in more leads at a lower cost. Our sales have doubled in
+              just three months!”
             </p>
-            <cite>Marissa Laurent</cite>
+            <cite>Ramesh Iyer, Founder of TechStart</cite>
           </blockquote>
           <blockquote>
             <p>
-              "Genius transformed our business with innovative digital
-              marketing. Their expertise boosted our online presence and sales.
-              We're thrilled with the results!"
+              “Thanks to Unvexed, our Google ad campaigns are performing better
+              than ever. We're seeing unprecedented growth.”
             </p>
-            <cite>Marissa Laurent</cite>
+            <cite>Priya Nair, CEO of Nair's Kitchen</cite>
           </blockquote>
           <blockquote>
             <p>
-              "Genius transformed our business with innovative digital
-              marketing. Their expertise boosted our online presence and sales.
-              We're thrilled with the results!"
+              “Unvexed's Facebook ads have driven traffic and sales beyond our
+              expectations. Their team is knowledgeable and responsive.”
             </p>
-            <cite>Marissa Laurent</cite>
+            <cite>Anjali Menon, Owner of Boutique Bliss</cite>
           </blockquote>
         </div>
       </section>
+      <div class="social-icons">
+        <h2>Follow Us!</h2>
+        <a href="#home" title="facebook">
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+        </a>
+
+        <a href="#home" title="instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+
+        <a href="#home" title="linkedin">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </a>
+      </div>
 
       <section id="faq" className="faq" ref={faqRef}>
         <div className="container">
           <h3>Frequently Asked Questions</h3>
           <div className="faq-item">
-            <h4>What services does Genius Digital Marketing Agency offer?</h4>
+            <h4>What industries do you specialize in?</h4>
             <p>
-              We offer a wide range of digital marketing services including SEO,
-              PPC, SMM, and Email Marketing.
+              We work with various industries, including tech startups,
+              e-commerce, and local businesses.
             </p>
           </div>
           <div className="faq-item">
-            <h4>
-              What makes Genius different from other digital marketing agencies?
-            </h4>
+            <h4>How soon can I expect results?</h4>
             <p>
-              Our unique blend of creativity and data-driven strategies sets us
-              apart.
+              Many clients see improvements within the first month. However,
+              results can vary based on your industry and competition.
             </p>
           </div>
           <div className="faq-item">
-            <h4>Can you manage my entire digital marketing campaign?</h4>
+            <h4>Do you offer long-term contracts?</h4>
             <p>
-              Yes, we provide comprehensive management for all aspects of your
-              digital marketing efforts.
+              We believe in earning your business every month. Our services are
+              available on a month-to-month basis.
             </p>
           </div>
         </div>
@@ -364,7 +390,7 @@ function App() {
               FAQ
             </a>
           </div>
-          <p>&copy; 2024 Unvex. All rights reserved.</p>
+          <p>&copy; 2024 Unvexed. All rights reserved.</p>
         </div>
       </footer>
     </html>
