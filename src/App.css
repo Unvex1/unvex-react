@@ -1,13 +1,40 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
+  background: rgb(132, 83, 237);
+  background: -moz-radial-gradient(
+    circle,
+    rgba(132, 83, 237, 1) 0%,
+    rgba(113, 72, 202, 1) 0%,
+    rgba(58, 42, 101, 1) 56%,
+    rgba(20, 20, 30, 1) 100%
+  );
+  background: -webkit-radial-gradient(
+    circle,
+    rgba(132, 83, 237, 1) 0%,
+    rgba(113, 72, 202, 1) 0%,
+    rgba(58, 42, 101, 1) 56%,
+    rgba(20, 20, 30, 1) 100%
+  );
+  background: radial-gradient(
+    circle,
+    rgba(132, 83, 237, 0.8) 0%,
+    rgba(113, 72, 202, 0.8) 0%,
+    rgba(58, 42, 101, 1) 0%,
+    rgba(20, 20, 30, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8453ed",endColorstr="#14141e",GradientType=1);
+  min-height: 100vh;
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+* {
+  -webkit-font-smoothing: antialiased;
+}
 * {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */
@@ -32,17 +59,15 @@ body {
 }
 
 header {
-  background: #000;
+  background: none;
   color: #fff;
   padding: 1em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
-  position: fixed; /* Make the header sticky */
+  /* Make the header sticky */
   top: 0;
-  width: 100%;
-  z-index: 1000;
 }
 
 header h1 {
@@ -66,19 +91,27 @@ nav a {
 }
 
 .contact-btn {
-  background: #0051a8;
-  color: #fff;
-  width: 95px;
-  padding: 0.5em 1em;
-  border-radius: 5px;
-  text-decoration: none;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
-}
+  padding: 0.875em 2em;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+  font-family: inherit;
+  color: #fff;
+  box-shadow: 0px 0px 150px #000000;
+  z-index: 2;
 
+  text-decoration: none;
+  transition: background-color 1s;
+  place-content: center;
+}
+.contact-btn:hover {
+  background-color: rgba(132, 83, 237, 1);
+  color: #fff;
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
+}
 .hero {
-  background: #000;
+  background: none;
   /* height: 200px; */
   color: #fff;
   text-align: center;
@@ -97,38 +130,88 @@ nav a {
 }
 
 .btn-primary {
-  background: #0051a8;
-  color: #fff;
-  padding: 0.75em 1.5em;
+  padding: 0.875em 2em;
   border-radius: 5px;
-  margin-top: 20px;
+  background: linear-gradient(90deg, #3f51b5, transparent) #5356ec;
+  font-family: inherit;
+  color: #fff;
   text-decoration: none;
+  transition: background-color 1s;
+  place-content: center;
+}
+.btn-primary:hover {
+  background-color: rgba(132, 83, 237, 1);
+  color: #fff;
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
 }
 
 .services {
-  background: #fff;
+  background: none;
   padding: 4em 0;
   text-align: center;
 }
 
 .services .con {
+  color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .services .service-item {
-  background: #f9f9f9;
+  background: linear-gradient(135deg, #000, rgba(132, 83, 237, 0.358));
   padding: 1em;
+  border: 1px solid rgba(255, 255, 255, 0.41);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   flex: 1 1 calc(25% - 1em);
   margin: 0.5em;
   box-sizing: border-box;
 }
+.div-block-935-copy {
+  grid-column-gap: 60px;
+  grid-row-gap: 60px;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto auto;
+  grid-auto-columns: 1fr;
+  max-width: 480px;
+  margin: 60px auto;
+  display: grid;
+}
+.tools {
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  text-align: center;
+}
+.tools-img {
+  background: linear-gradient(135deg, #000, rgba(132, 83, 237, 0.358));
+  border: 1px solid rgba(255, 255, 255, 0.41);
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 85px;
+  margin-bottom: 12px;
 
+  display: flex;
+}
+.tools-wrap {
+  grid-row-gap: 20px;
+  flex-direction: column;
+}
+img {
+  max-width: 100%;
+}
 .about {
-  background: #f0f0f0;
+  color: #fff;
+  background: none;
   padding: 4em 0;
   text-align: center;
 }
@@ -142,7 +225,7 @@ nav a {
 }
 
 .about .stat {
-  background: #fff;
+  background: linear-gradient(135deg, #000, rgba(132, 83, 237, 0.358));
   padding: 1em;
   min-width: 250px;
   border-radius: 5px;
@@ -153,7 +236,7 @@ nav a {
 
 .process {
   color: #fff;
-  background: #000;
+  background: none;
   padding: 4em 4em;
   text-align: center;
 }
@@ -181,9 +264,11 @@ nav a {
 
   flex-direction: column;
 }
-
+.testimonials {
+  color: #fff;
+}
 .testimonials blockquote {
-  background: #fff;
+  background: linear-gradient(135deg, #000, rgba(132, 83, 237, 0.358));
   max-width: 250px;
   padding: 2em;
   border-radius: 5px;
@@ -198,7 +283,8 @@ nav a {
   text-align: center;
 }
 .faq {
-  background: #fff;
+  color: #fff;
+  background: none;
   padding: 4em 0;
 
   text-align: center;
@@ -212,7 +298,7 @@ nav a {
 }
 
 .faq .faq-item {
-  background: #f9f9f9;
+  background: linear-gradient(135deg, #000, rgba(132, 83, 237, 0.358));
   max-width: 500px;
   padding: 1em;
   margin: 1em 0;
@@ -222,7 +308,7 @@ nav a {
 }
 
 footer {
-  background: #000;
+  background: none;
   color: #fff;
   text-align: center;
   padding: 1em 0;
@@ -243,7 +329,8 @@ footer .footer-nav a {
 /* Add the following styles to your existing CSS file */
 
 .contact-form {
-  background: #f0f0f0;
+  color: #fff;
+  background: none;
   padding: 4em 0;
   text-align: center;
 }
@@ -273,7 +360,7 @@ footer .footer-nav a {
 }
 
 .contact-form button {
-  background: #0051a8;
+  background: #5356e3;
   color: #fff;
   padding: 0.75em 1.5em;
   border: none;
@@ -294,7 +381,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #fff;
+  background: none;
   border: 1px solid #ccc;
   border-radius: 10px;
   padding: 1.5em;
@@ -314,7 +401,7 @@ input {
 .social-icons {
   padding: 30px;
   color: #fff;
-  background-color: #000;
+  background-color: none;
   text-align: center;
 }
 .social-icons a {

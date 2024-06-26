@@ -159,7 +159,92 @@ function App() {
           </div>
         </div>
       </section>
-
+      <section className="tools">
+        <div class="div-block-935-copy">
+          <div class="tools-wrap">
+            <div class="tools-img">
+              <img
+                src="https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/650d353a4fbb8cdbc0807832_fb-ads-manager.webp"
+                loading="lazy"
+                alt=""
+              ></img>
+            </div>
+            <div class="tools-name">Facebook Ads</div>
+          </div>
+          <div class="tools-wrap">
+            <div class="tools-img">
+              <img
+                src="https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/650d353a7d92dcdb1d15aba2_google-tag-manager.webp"
+                loading="lazy"
+                alt=""
+              ></img>
+            </div>
+            <div class="tools-name">Google Tag Manager </div>
+          </div>
+          <div class="tools-wrap">
+            <div class="tools-img">
+              <img
+                src="https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/650d353a0274a5a48ed934b0_microsoft-clarity.webp"
+                loading="lazy"
+                alt=""
+              ></img>
+            </div>
+            <div class="tools-name">Microsoft Clarity</div>
+          </div>
+          <div class="tools-wrap">
+            <div class="tools-img">
+              <img
+                src="https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/650d353a5f79fc1f36521dac_GA4%20(1).webp"
+                loading="lazy"
+                width="250"
+                alt=""
+              ></img>
+            </div>
+            <div class="tools-name">Google Analytics</div>
+          </div>
+          <div class="tools-wrap">
+            <div class="tools-img">
+              <img
+                src="https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/650d353a262efafa72e43241_google-adds-manager.webp"
+                loading="lazy"
+                alt=""
+              ></img>
+            </div>
+            <div class="tools-name">Google Ads</div>
+          </div>
+          <div class="tools-wrap">
+            <div class="tools-img">
+              <img
+                src="https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/650d353a0274a5a48ed934ab_Asset-4%402x.webp"
+                loading="lazy"
+                alt=""
+              ></img>
+            </div>
+            <div class="tools-name">Semrush</div>
+          </div>
+          <div class="tools-wrap">
+            <div class="tools-img">
+              <img
+                src="https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/650d353a7acfb823ade0fa66_mcp-intl.webp"
+                loading="lazy"
+                alt=""
+              ></img>
+            </div>
+            <div class="tools-name">Convertkit</div>
+          </div>
+          <div class="tools-wrap">
+            <div class="tools-img">
+              <img
+                src="https://cdn.prod.website-files.com/63c698560a57ab3deb917f5a/6470d70ae005606711474779_image%20407.png"
+                loading="lazy"
+                width="58"
+                alt=""
+              ></img>
+            </div>
+            <div class="tools-name">Zapier</div>
+          </div>
+        </div>
+      </section>
       <section className="about">
         <div>
           <h3>Benefits You'll Love</h3>
