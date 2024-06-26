@@ -162,7 +162,7 @@ function App() {
         </div>
       </section>
       <section className="tools">
-        <div class="div-block-935-copy">
+        <div class="tools-block">
           <div class="tools-wrap">
             <div class="tools-img">
               <img

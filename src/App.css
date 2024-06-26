@@ -169,7 +169,7 @@ nav a {
   margin: 0.5em;
   box-sizing: border-box;
 }
-.div-block-935-copy {
+.tools-block {
   grid-column-gap: 60px;
   grid-row-gap: 60px;
   grid-template-rows: auto auto;
@@ -445,6 +445,21 @@ input {
     width: 100%;
     /* padding:; */
   }
+  .tools-block {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    flex-wrap: wrap;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    display: grid;
+  }
+  .tools-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   header {
     flex-direction: column;
@@ -570,6 +585,22 @@ input {
   }
   footer p {
     margin-left: 17%;
+  }
+  .tools-block {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    flex-wrap: wrap;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-auto-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+  }
+  .tools-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   #thankYouMessage img {
     width: 350px;
