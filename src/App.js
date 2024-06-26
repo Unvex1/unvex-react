@@ -436,13 +436,13 @@ function App() {
                 required
               />
               <datalist id="meeting-times">
-                <option value="18:30"></option>
-                <option value="19:00"></option>
-                <option value="19:30"></option>
-                <option value="20:00"></option>
-                <option value="20:30"></option>
-                <option value="21:00"></option>
-                <option value="21:30"></option>
+                <option value="18:30" label="6:30 PM"></option>
+                <option value="19:00" label="7:00 PM"></option>
+                <option value="19:30" label="7:30 PM"></option>
+                <option value="20:00" label="8:00 PM"></option>
+                <option value="20:30" label="8:30 PM"></option>
+                <option value="21:00" label="9:00 PM"></option>
+                <option value="21:30" label="9:30 PM"></option>
               </datalist>
 
               <button type="submit" className="btn-primary">
