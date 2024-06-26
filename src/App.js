@@ -9,7 +9,8 @@ function App() {
 
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
-  const [meeting, setMeeting] = useState("");
+  const [meetingDate, setMeetingDate] = useState("");
+  const [meetingTime, setMeetingTime] = useState("");
 
   const homeRef = useRef(null);
   const servicesRef = useRef(null);
@@ -417,15 +418,35 @@ function App() {
                 onChange={(e) => setMobile(e.target.value)}
                 required
               />
-              <label htmlFor="meeting">Schedule a Meeting</label>
+              <label htmlFor="meetingDate">Schedule a Meeting</label>
               <input
-                type="datetime-local"
+                type="date"
                 id="meeting"
                 name="meeting"
-                value={meeting}
-                onChange={(e) => setMeeting(e.target.value)}
+                value={meetingDate}
+                onChange={(e) => setMeetingDate(e.target.value)}
                 required
               />
+
+              <label htmlFor="meetingTime"></label>
+              <input
+                type="time"
+                id="meeting"
+                name="meeting"
+                value={meetingTime}
+                onChange={(e) => setMeetingTime(e.target.value)}
+                list="meeting-times"
+                required
+              />
+              <datalist id="meeting-times">
+                <option value="18:30"></option>
+                <option value="19:00"></option>
+                <option value="19:30"></option>
+                <option value="20:00"></option>
+                <option value="20:30"></option>
+                <option value="21:00"></option>
+                <option value="21:30"></option>
+              </datalist>
 
               <button type="submit" className="btn-primary">
                 Submit
