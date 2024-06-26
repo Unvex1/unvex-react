@@ -360,7 +360,7 @@ footer .footer-nav a {
 }
 
 .contact-form button {
-  background: #5356e3;
+  background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
   color: #fff;
   padding: 0.75em 1.5em;
   border: none;
@@ -369,7 +369,10 @@ footer .footer-nav a {
 }
 
 .contact-form button:hover {
-  background: #0056b3;
+  background-color: rgba(132, 83, 237, 1);
+  color: #fff;
+  transition: all 200ms ease-in;
+  transform: scale(1.1);
 }
 input {
   font-family: "Poppins", sans-serif;
