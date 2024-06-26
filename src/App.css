@@ -16,6 +16,11 @@ body {
   display: none; /* Safari and Chrome */
 }
 
+* {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
 .container {
   width: 90%;
   max-width: 1200px;
@@ -278,6 +283,11 @@ footer .footer-nav a {
 
 .contact-form button:hover {
   background: #0056b3;
+}
+input {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px; /* Adjust font size as needed */
+  color: #000000; /* Optional: change the color of the placeholder text */
 }
 
 .testimonial-style {

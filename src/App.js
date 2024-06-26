@@ -6,9 +6,10 @@ import axios from "axios";
 function App() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+
   const [email, setEmail] = useState("");
   const [mobile, setMobile] = useState("");
+  const [meeting, setMeeting] = useState("");
 
   const homeRef = useRef(null);
   const servicesRef = useRef(null);
@@ -27,7 +28,7 @@ function App() {
     try {
       // Make a POST request to the API
       const response = await axios.post(
-        `https://email.dl-unvexed.workers.dev/send?email=${email}&first_name=${firstName}&last_name=${lastName}&phone=${mobile}&token=${elder}`
+        `https://email.dl-unvexed.workers.dev/send?email=${email}&first_name=${firstName}&phone=${mobile}&token=${elder}`
       );
       console.log(response.status);
       setFormSubmitted(true);
@@ -302,23 +303,13 @@ function App() {
           ) : (
             <form onSubmit={handleSubmit}>
               <h3>Contact Us</h3>
-              <label htmlFor="firstName">First Name</label>
+              <label htmlFor="firstName">Name</label>
               <input
                 type="text"
                 id="firstName"
                 name="firstName"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
-                required
-              />
-
-              <label htmlFor="lastName">Last Name</label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
                 required
               />
 
@@ -339,6 +330,15 @@ function App() {
                 name="mobile"
                 value={mobile}
                 onChange={(e) => setMobile(e.target.value)}
+                required
+              />
+              <label htmlFor="meeting">Schedule a Meeting</label>
+              <input
+                type="datetime-local"
+                id="meeting"
+                name="meeting"
+                value={meeting}
+                onChange={(e) => setMeeting(e.target.value)}
                 required
               />
 
