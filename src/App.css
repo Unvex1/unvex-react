@@ -48,6 +48,12 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 }
+.color {
+  color: #8453ed;
+}
+.color2 {
+  color: aliceblue;
+}
 
 .container {
   width: 90%;
@@ -91,6 +97,9 @@ nav a {
   text-decoration: none;
 }
 
+nav a:hover {
+  color: #8453ed;
+}
 .contact-btn {
   display: flex;
   padding: 0.875em 2em;
@@ -117,17 +126,20 @@ nav a {
   color: #fff;
   text-align: center;
   padding: 4em 0;
-  padding-top: 6em;
+  padding-left: 10.2em;
+  padding-right: 6em;
 }
 
-/* .hero h2 {
-  margin: 0;
-  font-size: 2.5em;
-} */
+.hero h2 {
+  font-size: 2em;
+  text-align: start;
+  margin-left: 5px;
+}
 
 .hero p {
   margin: 0.5em 0 1.5em;
   font-size: 1.2em;
+  text-align: start;
 }
 
 .btn-primary {
@@ -216,7 +228,9 @@ img {
   padding: 4em 0;
   text-align: center;
 }
-
+.about .stats .stat h4 {
+  color: #8453ed;
+}
 .about .stats {
   display: flex;
   flex-wrap: wrap;
@@ -226,7 +240,7 @@ img {
 }
 
 .about .stat {
-  background: linear-gradient(135deg, #000, rgba(132, 83, 237, 0.358));
+  background: linear-gradient(125deg, #000, rgba(132, 83, 237, 0.358));
   padding: 1em;
   min-width: 250px;
   border-radius: 5px;

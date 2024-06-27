@@ -50,7 +50,9 @@ function App() {
 
       <header>
         <div className="container">
-          <h1>UNVEXED</h1>
+          <h1>
+            UN<span className="color">VEXED</span>
+          </h1>
           <nav>
             <ul>
               <li>
@@ -114,15 +116,26 @@ function App() {
 
       <section id="home" className="hero" ref={homeRef}>
         <div>
-          <h2>Why Unvexed?</h2>
+          <h2>
+            Why <span className="color">Unvexed?</span>
+          </h2>
           <p>
-            Running a small business or startup is tough. We get it. You need
-            effective marketing strategies that deliver real results without
-            breaking the bank. At Unvexed, we specialize in Facebook ads, Google
-            ads, and comprehensive marketing strategies designed to maximize
-            your return on ad spend (ROAS) and minimize your cost per click
-            (CPC). Our proven scaling strategies ensure your campaigns reach new
-            heights.
+            &#8594; Running a small business or startup is tough. We get it. You
+            need
+            <span className="color"> Effective Marketing Strategies</span> that
+            deliver real results without breaking the bank.
+          </p>{" "}
+          <p>
+            <span>&#8594;</span> At <span className="color">Unvexed</span>, we
+            specialize in{" "}
+            <span className="color">Facebook ads, Google ads,</span> and
+            comprehensive marketing strategies designed to maximize your return
+            on ad spend <span className="color">(ROAS) </span>and minimize your
+            cost per click <span className="color">(CPC)</span>.
+          </p>{" "}
+          <p>
+            &#8594; Our proven scaling strategies ensure your campaigns reach
+            new heights.
           </p>
           <a
             href="#form"
@@ -140,21 +153,21 @@ function App() {
       <section id="services" className="services" ref={servicesRef}>
         <div className="con">
           <div className="service-item">
-            <h3>Facebook Ads</h3>
+            <h3 className="color">Facebook Ads</h3>
             <p>
               Drive targeted traffic to your business with tailored Facebook ad
               campaigns.
             </p>
           </div>
           <div className="service-item">
-            <h3>Google Ads</h3>
+            <h3 className="color">Google Ads</h3>
             <p>
               Reach customers when they're searching for products or services
               like yours.
             </p>
           </div>
           <div className="service-item">
-            <h3>Marketing Strategy</h3>
+            <h3 className="color">Marketing Strategy</h3>
             <p>
               Develop a customized marketing plan that aligns with your business
               goals.
@@ -163,7 +176,7 @@ function App() {
         </div>
       </section>
       <section className="tools">
-        <div class="tools-block">
+        <div class="tools-block color2">
           <div class="tools-wrap">
             <div class="tools-img">
               <img
@@ -250,7 +263,9 @@ function App() {
       </section>
       <section className="about">
         <div>
-          <h3>Benefits You'll Love</h3>
+          <h3>
+            Benefits <span className="color">You'll Love</span>
+          </h3>
           <p>
             Crafted from a fusion of expertise and passion, we will
             revolutionize your digital presence.
