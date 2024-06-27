@@ -30,7 +30,7 @@ function App() {
     try {
       // Make a POST request to the API
       const response = await axios.post(
-        `https://email.dl-unvexed.workers.dev/send?email=${email}&first_name=${firstName}&phone=${mobile}&token=${elder}`
+        `https://email.dl-unvexed.workers.dev/send?email=${email}&first_name=${firstName}&phone=${mobile}&meet_date=${meetingDate}&meet_time${meetingTime}token=${elder}`
       );
       console.log(response.status);
       setFormSubmitted(true);
