@@ -22,6 +22,7 @@ function App() {
   const handleScroll = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
+  const today = new Date().toISOString().split("T")[0];
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -420,6 +421,7 @@ function App() {
                 type="date"
                 id="meeting"
                 name="meeting"
+                min={today}
                 value={meetingDate}
                 onChange={(e) => setMeetingDate(e.target.value)}
                 required
