@@ -300,7 +300,7 @@ function App() {
 
       <section className="process">
         <div className="container">
-          <h3 className="color">How It Works</h3>
+          <h2 className="color">How It Works</h2>
           <ol>
             <li>Free Consultation</li>
             <li>Customized Plan</li>
@@ -323,7 +323,7 @@ function App() {
 
       <section id="testimonials" className="testimonials" ref={testimonialsRef}>
         <div className="container">
-          <h3 className="color">Success Stories</h3>
+          <h2 className="color">Success Stories</h2>
           <blockquote>
             <p>
               “Unvexed transformed our marketing efforts. Their strategies
@@ -402,7 +402,7 @@ function App() {
             </div>
           ) : (
             <form onSubmit={handleSubmit}>
-              <h3 className="color">Contact Us</h3>
+              <h2 className="color">Contact Us</h2>
               <label htmlFor="firstName">Name</label>
               <input
                 type="text"

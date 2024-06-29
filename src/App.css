@@ -225,7 +225,7 @@ img {
 .about {
   color: #fff;
   background: none;
-  padding: 4em 0;
+  padding: 2em 0;
   text-align: center;
 }
 .about .stats .stat h4 {
@@ -252,7 +252,7 @@ img {
 .process {
   color: #fff;
   background: none;
-  padding: 4em 4em;
+  padding: 1em 4em;
   text-align: center;
 }
 
@@ -279,8 +279,12 @@ img {
 
   flex-direction: column;
 }
+.process .container h2 {
+  margin: 0;
+}
 .testimonials {
   color: #fff;
+  margin-top: 1em;
 }
 .testimonials blockquote {
   background: linear-gradient(135deg, #000, rgba(132, 83, 237, 0.358));
@@ -294,7 +298,7 @@ img {
   display: flex;
   flex-direction: row;
 }
-.testimonials .container h3 {
+.testimonials .container h2 {
   width: 100%;
   text-align: center;
 }
@@ -496,6 +500,10 @@ input {
   .hero h2 {
     font-size: 2em;
   }
+  .hero {
+    padding-left: 25px;
+    padding-right: 10px;
+  }
 
   .services .con {
     flex-direction: column;
@@ -588,9 +596,16 @@ input {
     min-width: 250px;
     max-width: 350px;
   }
+  .services {
+    padding-top: 0.1em;
+  }
   .about .stat {
     flex: 1 1 100%;
     max-width: 300px;
+  }
+  .about p {
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .contact-btn {
     margin-right: 20px;
