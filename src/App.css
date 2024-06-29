@@ -143,7 +143,7 @@ nav a:hover {
 }
 
 .btn-primary {
-  padding: 0.875em 2em;
+  padding: 0.675em 1.5em;
   border-radius: 5px;
   background: linear-gradient(90deg, #3f51b5, transparent) #5356ec;
   font-family: inherit;
@@ -285,6 +285,7 @@ img {
 .testimonials blockquote {
   background: linear-gradient(135deg, #000, rgba(132, 83, 237, 0.358));
   max-width: 250px;
+  max-height: 150px;
   padding: 2em;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -296,6 +297,9 @@ img {
 .testimonials .container h3 {
   width: 100%;
   text-align: center;
+}
+.testimonials .container p {
+  max-height: 108px;
 }
 .faq {
   color: #fff;
@@ -556,6 +560,11 @@ input {
   .hero h2 {
     font-size: 1.5em;
   }
+  .hero {
+    padding: 4em 0;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
   nav ul {
     display: none;
   }
@@ -569,6 +578,7 @@ input {
   .hero h2 {
     margin: 0;
   }
+
   .services .con {
     flex-direction: column;
     align-items: center;

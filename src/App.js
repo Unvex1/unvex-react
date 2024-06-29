@@ -176,6 +176,7 @@ function App() {
         </div>
       </section>
       <section className="tools">
+        <h2 className="color">Tools</h2>
         <div class="tools-block color2">
           <div class="tools-wrap">
             <div class="tools-img">
@@ -299,7 +300,7 @@ function App() {
 
       <section className="process">
         <div className="container">
-          <h3>How It Works</h3>
+          <h3 className="color">How It Works</h3>
           <ol>
             <li>Free Consultation</li>
             <li>Customized Plan</li>
@@ -322,33 +323,33 @@ function App() {
 
       <section id="testimonials" className="testimonials" ref={testimonialsRef}>
         <div className="container">
-          <h3>Success Stories</h3>
+          <h3 className="color">Success Stories</h3>
           <blockquote>
             <p>
               “Unvexed transformed our marketing efforts. Their strategies
               brought in more leads at a lower cost. Our sales have doubled in
               just three months!”
             </p>
-            <cite>Ramesh Iyer, Founder of TechStart</cite>
+            <cite className="color">Ramesh Iyer, Founder of TechStart</cite>
           </blockquote>
           <blockquote>
             <p>
               “Thanks to Unvexed, our Google ad campaigns are performing better
               than ever. We're seeing unprecedented growth.”
             </p>
-            <cite>Priya Nair, CEO of Nair's Kitchen</cite>
+            <cite className="color">Priya Nair, CEO of Nair's Kitchen</cite>
           </blockquote>
           <blockquote>
             <p>
               “Unvexed's Facebook ads have driven traffic and sales beyond our
               expectations. Their team is knowledgeable and responsive.”
             </p>
-            <cite>Anjali Menon, Owner of Boutique Bliss</cite>
+            <cite className="color">Anjali Menon, Owner of Boutique Bliss</cite>
           </blockquote>
         </div>
       </section>
       <div class="social-icons">
-        <h2>Follow Us!</h2>
+        <h2 className="color">Follow Us!</h2>
         <a href="#home" title="facebook">
           <i class="fa fa-facebook-square" aria-hidden="true"></i>
         </a>
@@ -364,23 +365,23 @@ function App() {
 
       <section id="faq" className="faq" ref={faqRef}>
         <div className="container">
-          <h3>Frequently Asked Questions</h3>
+          <h3 className="color">Frequently Asked Questions</h3>
           <div className="faq-item">
-            <h4>What industries do you specialize in?</h4>
+            <h4 className="color">What industries do you specialize in?</h4>
             <p>
               We work with various industries, including tech startups,
               e-commerce, and local businesses.
             </p>
           </div>
           <div className="faq-item">
-            <h4>How soon can I expect results?</h4>
+            <h4 className="color">How soon can I expect results?</h4>
             <p>
               Many clients see improvements within the first month. However,
               results can vary based on your industry and competition.
             </p>
           </div>
           <div className="faq-item">
-            <h4>Do you offer long-term contracts?</h4>
+            <h4 className="color">Do you offer long-term contracts?</h4>
             <p>
               We believe in earning your business every month. Our services are
               available on a month-to-month basis.
@@ -401,7 +402,7 @@ function App() {
             </div>
           ) : (
             <form onSubmit={handleSubmit}>
-              <h3>Contact Us</h3>
+              <h3 className="color">Contact Us</h3>
               <label htmlFor="firstName">Name</label>
               <input
                 type="text"
