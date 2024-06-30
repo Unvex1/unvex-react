@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { enforceCriteria } from "./pages.js";
+import logo from "./assets/unvex1.png";
 
 import "./App.css";
 import axios from "axios";
@@ -50,9 +51,6 @@ function App() {
 
       <header>
         <div className="container">
-          <h1>
-            UN<span className="color">VEXED</span>
-          </h1>
           <nav>
             <ul>
               <li>
@@ -101,6 +99,12 @@ function App() {
               </li>
             </ul>
           </nav>
+          <h1>
+            <img src={logo} alt="logo" width="25" height="25"></img>
+            <a href="/">
+              <span>UNVEXED</span>
+            </a>
+          </h1>
           <a
             href="#form"
             className="contact-btn"

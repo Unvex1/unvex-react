@@ -57,8 +57,9 @@ body {
 
 .container {
   width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
+  margin: 0 120px;
+
   display: flex; /* Add flex display */
   justify-content: space-between; /* Ensure space between header items */
   align-items: center;
@@ -79,7 +80,17 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.6em;
+  font-weight: 500;
+  color: #fff;
+}
+header h1 a {
+  color: #d2d2d2;
+}
+header h1 img {
+  padding-right: 3px;
+  position: relative;
+  top: 4px;
 }
 
 nav ul {
@@ -465,6 +476,7 @@ input {
 /* Responsive Styles */
 @media (max-width: 1250px) {
   .container {
+    margin: 0 auto;
     width: 100%;
     /* padding:; */
   }
