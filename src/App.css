@@ -57,7 +57,7 @@ body {
 
 .container {
   width: 90%;
-  /* max-width: 1200px; */
+  /* */
   margin: 0 120px;
 
   display: flex; /* Add flex display */
@@ -65,7 +65,9 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
-
+header .container {
+  max-width: 1200px;
+}
 header {
   background: none;
   color: #fff;
