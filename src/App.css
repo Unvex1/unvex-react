@@ -282,7 +282,7 @@ img {
 }
 .testimonials blockquote {
   background: linear-gradient(to top left, #000 80%, rgba(132, 83, 237, 0.7));
-  max-width: 250px;
+  max-width: 275px;
   max-height: 150px;
   padding: 2em;
   border: 1px solid rgba(255, 255, 255, 0.41);
