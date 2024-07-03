@@ -289,6 +289,9 @@ img {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.testimonials blockquote cite {
+  padding-bottom: 10px;
+}
 .testimonials .container {
   display: flex;
   flex-direction: row;
