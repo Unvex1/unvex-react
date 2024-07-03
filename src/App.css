@@ -95,7 +95,7 @@ nav a:hover {
 }
 .contact-btn {
   display: flex;
-  padding: 0.875em 2em;
+  padding: 0.675em 1.5em;
   border-radius: 5px;
   background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
   font-family: inherit;
