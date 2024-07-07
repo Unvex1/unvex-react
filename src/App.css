@@ -115,6 +115,37 @@ nav a:hover {
   transition: all 200ms ease-in;
   transform: scale(1.1);
 }
+/* .floatbcont {
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+  background-color: #000;
+  z-index: 1000;
+} */
+.apply-now-button,
+.apply-now-button2 {
+  position: fixed;
+
+  background: linear-gradient(90deg, #3f51b5, transparent) #5356ec;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Ensure it appears above other content */
+}
+.apply-now-button {
+  bottom: 20px;
+  left: 20px;
+}
+.apply-now-button2 {
+  bottom: 20px;
+  right: 20px;
+}
 .hero {
   background: none;
   /* height: 200px; */
@@ -222,6 +253,9 @@ img {
   background: none;
   padding: 2em 0;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .about .stats .stat h4 {
   /* color: #8453ed; */
@@ -230,7 +264,12 @@ img {
 .about .stats {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
   align-items: center;
   margin-top: 2em;
 }
@@ -238,6 +277,8 @@ img {
 .about .stat {
   background: linear-gradient(to top left, #000 80%, rgba(132, 83, 237, 0.7));
   padding: 1em;
+  max-width: 300px;
+  max-height: 157px;
   border: 1px solid rgba(255, 255, 255, 0.41);
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -336,7 +377,7 @@ footer {
   background: none;
   color: #fff;
   text-align: center;
-  padding: 1em 0;
+  padding: 1em 2em;
 }
 
 footer .footer-nav {
@@ -602,9 +643,23 @@ input {
   .services {
     padding-top: 0.1em;
   }
+  .about .stats {
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: center;
+    margin-top: 2em;
+  }
+
   .about .stat {
-    flex: 1 1 100%;
-    max-width: 300px;
+    background: linear-gradient(to top left, #000 80%, rgba(132, 83, 237, 0.7));
+    padding: 1em;
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 1em);
+    margin: 0.5em;
+    box-sizing: border-box;
   }
   .about p {
     padding-left: 25px;
@@ -617,6 +672,10 @@ input {
   }
   .testimonials blockquote {
     margin-left: 13%;
+  }
+  footer {
+    position: relative;
+    bottom: 25px;
   }
   footer .footer-nav {
     display: flex;
