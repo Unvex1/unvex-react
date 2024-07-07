@@ -13,6 +13,7 @@ function App() {
   const [mobile, setMobile] = useState("");
   const [meetingDate, setMeetingDate] = useState("");
   const [meetingTime, setMeetingTime] = useState("");
+  const [buttonsVisible, setButtonsVisible] = useState(true);
 
   const homeRef = useRef(null);
   const servicesRef = useRef(null);
@@ -24,7 +25,11 @@ function App() {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
   const today = new Date().toISOString().split("T")[0];
-
+  const handleClick = (e) => {
+    e.preventDefault();
+    handleScroll(formRef);
+    setButtonsVisible(false);
+  };
   const handleSubmit = async (e) => {
     e.preventDefault();
     const elder = enforceCriteria();
@@ -117,6 +122,19 @@ function App() {
           </a>
         </div>
       </header>
+
+      {buttonsVisible && (
+        <>
+          <div className="floatbcont">
+            <a href="/" className="apply-now-button" onClick={handleClick}>
+              Apply Now
+            </a>
+            <a href="/" className="apply-now-button2" onClick={handleClick}>
+              Contact Us
+            </a>
+          </div>
+        </>
+      )}
 
       <section id="home" className="hero" ref={homeRef}>
         <div>
@@ -293,10 +311,7 @@ function App() {
             </div>
             <div className="stat">
               <h4>Dedicated Support</h4>
-              <p>
-                Our team is here for you, providing insights and optimizations
-                every step of the way.
-              </p>
+              <p>Providing insights and optimizations every step of the way.</p>
             </div>
           </div>
         </div>
