@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { enforceCriteria } from "./pages.js";
 import logo from "./assets/unvex1.png";
-
+import TagManager from "react-gtm-module";
 import "./App.css";
 import axios from "axios";
 
@@ -45,7 +45,11 @@ function App() {
       console.error("Error:", error);
     }
   };
+  const tagManagerArgs = {
+    gtmId: "G-GKCKMCX786",
+  };
 
+  TagManager.initialize(tagManagerArgs);
   return (
     <html lang="en">
       <head>
