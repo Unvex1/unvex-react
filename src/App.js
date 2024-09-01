@@ -46,7 +46,7 @@ function App() {
     }
   };
   const tagManagerArgs = {
-    gtmId: "G-GKCKMCX786",
+    gtmId: "G-JJ23HS68GD",
   };
 
   TagManager.initialize(tagManagerArgs);
