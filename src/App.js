@@ -3,7 +3,7 @@ import { enforceCriteria } from "./pages.js";
 import logo from "./assets/unvex1.png";
 import TagManager from "react-gtm-module";
 import "./App.css";
-from axios from "axios";
+from axios import "axios";
 
 function App() {
   const [formSubmitted, setFormSubmitted] = useState(false);
